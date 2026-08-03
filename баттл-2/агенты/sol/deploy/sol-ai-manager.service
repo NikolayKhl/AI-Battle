@@ -1,0 +1,24 @@
+[Unit]
+Description=SOL AI first-line manager
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/путь/к/проекту/sol
+ExecStart=/usr/bin/python3 /путь/к/проекту/sol/sol_manager.py
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+Environment=SOL_SETTINGS_PATH=/путь/к/проекту/настройки-SOL.json
+Environment=SOL_DB_PATH=/путь/к/проекту/sol/var/sol.sqlite3
+Environment=SOL_USE_CODEX=1
+Environment=PATH=/путь/к/node/bin:/usr/local/bin:/usr/bin:/bin
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/путь/к/проекту/sol/var
+
+[Install]
+WantedBy=default.target

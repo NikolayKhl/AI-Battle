@@ -1,0 +1,4 @@
+__pycache__/
+env.sh
+logs/
+results/
