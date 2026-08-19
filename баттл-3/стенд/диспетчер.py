@@ -206,7 +206,7 @@ def load_usage():
     """расход.json из папок участников: {агент: dict|None}."""
     out = {}
     # участники могут работать в любой из двух папок — берём самый свежий файл
-    roots = [EPISODE / "participants", pathlib.Path("/home/clawd/проект-баттл3")]
+    roots = [BASE.parent / "агенты", EPISODE / "participants"]
     for agent in ("SOL", "FABLE"):
         cands = [r / agent.lower() / "расход.json" for r in roots]
         cands = [c for c in cands if c.exists()]
@@ -546,7 +546,7 @@ def screen_check():
          "экран обезличивания не отдаёт Клиента №17")
     test((EPISODE / "prep" / "ЧИСЛА.md").exists(),
          "prep/ЧИСЛА.md на месте", "prep/ЧИСЛА.md не сгенерирован")
-    ws = pathlib.Path("/home/clawd/проект-баттл3")
+    ws = EPISODE / "participants"
     ws.mkdir(exist_ok=True)
     for name in ("ТЗ.md", "СТАНДАРТ.md"):
         src = (folder / name).read_text()
@@ -567,8 +567,8 @@ def screen_check():
     os.chmod(access, 0o600)
     extra = sorted(p.name for p in ws.iterdir()
                    if p.name not in ("ТЗ.md", "СТАНДАРТ.md", "доступ.txt", "sol", "fable"))
-    test(not extra, "рабочая папка участников /home/clawd/проект-баттл3: ТЗ, стандарт, доступ.txt, sol/, fable/",
-         f"в /home/clawd/проект-баттл3 лишнее: {', '.join(extra)}")
+    test(not extra, "рабочая папка участников (participants/): ТЗ, стандарт, доступ.txt, sol/, fable/",
+         f"в рабочей папке участников лишнее: {', '.join(extra)}")
     leftovers = [str(q.relative_to(ws)) for sub in ("sol", "fable") for q in (ws / sub).iterdir()]
     test(not leftovers, "папки sol/ и fable/ пустые — участники начнут с нуля",
          f"в sol/ или fable/ остатки прошлой попытки: {', '.join(leftovers[:5])} — убрать в prep/")
@@ -606,7 +606,7 @@ def screen_check():
     out.append("Отдельно, руками у Клода (в этот список не влезает):")
     out.append("  — карточка D-39 в CRM показывает 20:40")
     out.append("  — запись примечаний через API проверена (16.08: создать/PATCH ок)")
-    out.append("  — VS Code открыт на /home/clawd/проект-баттл3, чаты Codex и Claude Code новые")
+    out.append("  — VS Code открыт на рабочей папке участников, чаты Codex и Claude Code новые")
     out.append("  — плашка настроек моделей и плашка «имена синтетические» у монтажёра")
     out.append("")
     out.append("ГОТОВО — можно включать камеру" if not bad
