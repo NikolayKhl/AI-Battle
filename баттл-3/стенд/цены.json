@@ -1,0 +1,11 @@
+{
+ "_комментарий": "Прайсы API за 1M токенов в USD и курс рубля. Источники и дата — рядом. Менять только с обновлением источника.",
+ "дата": "2026-08-16",
+ "usd_rub": 84.5449,
+ "usd_rub_источник": "ЦБ РФ, курс на 16.08.2026 (zaim.com/news/kurs-valyut-tsb-na-16-avgusta-2026-goda-dollar-84-54-rublya)",
+ "модели": {
+  "SOL":   {"модель": "gpt-5.6-sol", "вход": 5.0,  "выход": 30.0, "источник": "OpenAI прайс после снижения 30.07.2026 (layer3labs.io/guides/gpt-5-6-pricing, openrouter.ai/openai/gpt-5.6-sol)", "подписка": "ChatGPT (Codex входит в подписку)"},
+  "FABLE": {"модель": "claude-fable-5", "вход": 10.0, "выход": 50.0, "источник": "Anthropic прайс (platform.claude.com/docs/en/pricing, кэш скилла claude-api 2026-06-24)", "подписка": "Claude Max (Claude Code входит в подписку)"}
+ },
+ "прогонов_в_месяц": 4
+}

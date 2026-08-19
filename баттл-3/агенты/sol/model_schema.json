@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "rule": {"type": "string"},
+          "summary": {"type": "string"},
+          "evidence_id": {"type": "string"},
+          "quote": {"type": "string"}
+        },
+        "required": ["rule", "summary", "evidence_id", "quote"]
+      }
+    },
+    "applicable_checks": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 1, "maximum": 10}
+    },
+    "result_assessment": {"type": "string"},
+    "recoverability": {
+      "type": "string",
+      "enum": ["open_actionable", "open_no_issue", "closed_won", "closed_lost"]
+    },
+    "next_action": {"type": "string"}
+  },
+  "required": [
+    "violations",
+    "applicable_checks",
+    "result_assessment",
+    "recoverability",
+    "next_action"
+  ]
+}
