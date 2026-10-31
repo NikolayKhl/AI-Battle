@@ -18,6 +18,7 @@
 | 2 | ИИ-менеджер первой линии для Битрикс24: 30 заявок, половина кривых | GPT 5.6 Sol · Claude Fable 5 | [`баттл-2/`](баттл-2/) | [смотреть](https://www.youtube.com/watch?v=hnF5-xJteoI) |
 | 3 | ИИ-контролёр отдела продаж в amoCRM: 40 сделок, вердикт в карточку | GPT 5.6 Sol · Claude Fable 5 | [`баттл-3/`](баттл-3/) | [смотреть](https://www.youtube.com/watch?v=pI9TsWS0rw0) |
 | 4 | Батл китайских моделей: браузерная 3D-игра Hungry Fish по ТЗ | DeepSeek V4 Pro · Kimi K3 · GLM-5.3 · Claude Opus 5.5 high | [`батл китайских моделей/`](батл%20китайских%20моделей/) | [смотреть](https://www.youtube.com/watch?v=dneuk_qnt00) |
+| 5 | Батл китайских моделей, часть 2: браузерная 3D-игра Hungry Fish по ТЗ | Kimi K3.1 Pro · DeepSeek V4.1 Flash · Qwen3.8-Max · GLM-5.3 · Claude Opus 5.5 high | [`Батл китайских моделей, часть 2/`](Батл%20китайских%20моделей,%20часть%202/) | [смотреть](https://www.youtube.com/watch?v=QhZ1UVRcK70) |
 
 
 ## Лицензия
