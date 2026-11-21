@@ -56,7 +56,7 @@
 Сделай десктопное приложение для записи звонков в zoom, google meets и тп, чтобы оно работало так же как работает десктопное приложение plaud, только пусть использует API OpenAI для распознавания и складывает текстовые файлы с расшифровкой в папку, которые я укажу
 ```
 
-| Модель | Приложение | Сборки |
-|---|---|---|
-| GPT-6.2 Astra ultra | Sonora: архивы для Apple Silicon и Intel, macOS 15+ | [Google Диск](https://drive.google.com/drive/folders/1w2boOItEts5-mS8z65SJbD2I8v5by8Hs) |
-| Claude Fable 5.2 max | Call Recorder: архивы для Apple Silicon и Intel и установщик, macOS 13+ | [Google Диск](https://drive.google.com/drive/folders/1E2qkzkBqHELX_8rdmk1fTQZs1sL6pQwG) |
+| Модель | Приложение |
+|---|---|
+| GPT-6.2 Astra ultra | Sonora |
+| Claude Fable 5.2 max | Call Recorder |
