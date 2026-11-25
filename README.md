@@ -20,6 +20,7 @@
 | 4 | Батл китайских моделей: браузерная 3D-игра Hungry Fish по ТЗ | DeepSeek V4 Pro · Kimi K3 · GLM-5.3 · Claude Opus 5.5 high | [`батл китайских моделей/`](батл%20китайских%20моделей/) | [смотреть](https://www.youtube.com/watch?v=dneuk_qnt00) |
 | 5 | Батл китайских моделей, часть 2: браузерная 3D-игра Hungry Fish по ТЗ | Kimi K3.1 Pro · DeepSeek V4.1 Flash · Qwen3.8-Max · GLM-5.3 · Claude Opus 5.5 high | [`Батл-китайских-моделей-часть-2/`](Батл-китайских-моделей-часть-2/) | [смотреть](https://www.youtube.com/watch?v=QhZ1UVRcK70) |
 | 6 | Батл GPT-6.2 Astra и Claude Fable 5.2: редизайн сайта, браузерная 3D-игра Hungry Fish по ТЗ и приложение для записи звонков | GPT-6.2 Astra ultra · Claude Fable 5.2 max | [`батл-gpt-6.2-astra-и-fable-5.2/`](батл-gpt-6.2-astra-и-fable-5.2/) | [смотреть](https://www.youtube.com/watch?v=6mOldSkTcy4) |
+| 7 | Вайбкодинг с MiniMax: браузерная 3D-игра Hungry Fish по ТЗ | MiniMax M3.1 Flash max · Claude Opus 5.5 high | [`вайбкодинг-с-minimax/`](вайбкодинг-с-minimax/) | [смотреть](https://www.youtube.com/watch?v=SA4rEpqtfUc) |
 
 
 ## Лицензия
